@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NIA — Nothing Impedes Activity | Performance Training Apparel</title>
+  <meta name="description" content="Athletic wear designed for lifestyle, not trends. Inclusive sizing from XS to 4X. Built to train, built to last, built to feel good in." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="NIA — Nothing Impedes Activity | Performance Training Apparel" />
+  <meta property="og:description" content="Athletic wear designed for lifestyle, not trends. Inclusive sizing from XS to 4X. Built to train, built to last, built to feel good in." />
+  <meta property="og:url" content="https://fitfornia.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%234A5A3C'/%3E%3C/svg%3E" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='transparent'/%3E%3Ctext x='4' y='26' font-family='DM Sans, sans-serif' font-weight='700' font-size='26' fill='%234A5A3C'%3EN%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Reset & Base ─────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --olive:      #4A5A3C;
+      --olive-dark: #3B4A30;
+      --charcoal:   #2E2E2E;
+      --bone:       #F5F0E8;
+      --text:       #1A1A1A;
+      --text-muted: #6B6B6B;
+      --border:     #E0D9CE;
+      --max-w:      1080px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bone);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── Skip Link ────────────────────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--charcoal);
+      color: var(--bone);
+      padding: 0.5rem 1rem;
+      z-index: 1000;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      text-decoration: none;
+      border-radius: 0 0 4px 4px;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* ─── Layout Utility ───────────────────────────────── */
+    .inner {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .text-block {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ─── Typography ───────────────────────────────────── */
+    h1, h2, h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--charcoal);
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ─── Button ───────────────────────────────────────── */
+    .btn {
+      display: inline-block;
+      background-color: var(--olive);
+      color: var(--bone);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.875rem 2.25rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      min-height: 44px;
+      transition: background-color 0.15s ease;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: var(--olive-dark);
+      outline: 2px solid var(--olive-dark);
+      outline-offset: 2px;
+    }
+
+    /* ─── Section Shared ───────────────────────────────── */
+    section {
+      padding: 5rem 0;
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* SECTION 1: HERO                                      */
+    /* ═══════════════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--bone);
+      padding: 4rem 1.5rem;
+    }
+
+    .hero-wordmark {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 3rem; /* 48px mobile */
+      letter-spacing: 0.15em;
+      color: var(--charcoal);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-tagline {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
+      color: var(--olive);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-oneliner {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-wordmark {
+        font-size: 5.5rem; /* ~88px desktop */
+      }
+      .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+      }
+      .hero-oneliner {
+        font-size: 1.15rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* SECTION 2: THE PROBLEM                              */
+    /* ═══════════════════════════════════════════════════ */
+    #problem {
+      background-color: var(--bone);
+      border-top: 1px solid var(--border);
+    }
+
+    #problem .closer {
+      font-weight: 500;
+      color: var(--olive);
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* SECTION 3: WHAT WE'RE BUILDING                      */
+    /* ═══════════════════════════════════════════════════ */
+    #products {
+      background-color: var(--bone);
+      border-top: 1px solid var(--border);
+    }
+
+    .products-intro {
+      max-width: 680px;
+      margin: 0 auto 3rem;
+    }
+
+    .product-group-label {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--olive);
+      margin-bottom: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .product-card {
+      background-color: #EDE8DF;
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      border-radius: 2px;
+    }
+
+    .product-card h3 {
+      color: var(--charcoal);
+      font-size: 1rem;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      color: var(--text-muted);
+    }
+
+    .products-footer {
+      max-width: 680px;
+      margin: 2.5rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.925rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* SECTION 4: VALUES                                   */
+    /* ═══════════════════════════════════════════════════ */
+    #values {
+      background-color: var(--bone);
+      border-top: 1px solid var(--border);
+    }
+
+    .values-list {
+      list-style: none;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .values-list li {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .values-list li:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .value-title {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--charcoal);
+      margin-bottom: 0.2rem;
+    }
+
+    .value-desc {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* SECTION 5: EMAIL SIGNUP                             */
+    /* ═══════════════════════════════════════════════════ */
+    #signup {
+      background-color: var(--olive);
+      border-top: none;
+      text-align: center;
+    }
+
+    #signup h2 {
+      color: var(--bone);
+    }
+
+    #signup .subtext {
+      color: rgba(245, 240, 232, 0.8);
+      max-width: 520px;
+      margin: 0 auto 2.25rem;
+      font-size: 1rem;
+    }
+
+    .btn-signup-link {
+      display: inline-block;
+      background-color: var(--charcoal);
+      color: var(--bone);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.875rem 2.25rem;
+      border-radius: 4px;
+      min-height: 44px;
+      transition: background-color 0.15s ease;
+    }
+    .btn-signup-link:hover,
+    .btn-signup-link:focus {
+      background-color: #1a1a1a;
+      outline: 2px solid var(--bone);
+      outline-offset: 2px;
+    }
+
+    .signup-disclaimer {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.65);
+    }
+
+    /* ═══════════════════════════════════════════════════ */
+    /* FOOTER                                              */
+    /* ═══════════════════════════════════════════════════ */
+    footer {
+      background-color: var(--charcoal);
+      color: var(--bone);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.05em;
+      color: var(--bone);
+      margin-bottom: 0.25rem;
+    }
+
+    .footer-domain {
+      font-size: 0.875rem;
+      color: rgba(245, 240, 232, 0.5);
+      margin-bottom: 1.75rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-socials a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(245, 240, 232, 0.75);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-family: 'Inter', sans-serif;
+      min-height: 44px;
+      transition: color 0.15s ease;
+    }
+    .footer-socials a:hover,
+    .footer-socials a:focus {
+      color: var(--bone);
+      outline: none;
+      text-decoration: underline;
+    }
+
+    .footer-socials svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.4);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 1: HERO                                  -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <header id="hero" role="banner">
+      <div>
+        <p class="hero-wordmark" aria-label="NIA">NIA</p>
+        <p class="hero-tagline">Nothing Impedes Activity</p>
+        <p class="hero-oneliner">
+          Athletic wear designed for lifestyle, not trends.<br />
+          Built to train. Built to last. Built to feel good in.
+        </p>
+        <a href="#signup" class="btn">Join the Waitlist</a>
+      </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 2: THE PROBLEM                          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="problem" aria-labelledby="problem-heading">
+      <div class="inner">
+        <div class="text-block">
+          <h2 id="problem-heading">The Problem</h2>
+          <p>
+            Most activewear falls into one of two categories: performance brands that treat
+            inclusive sizing as an afterthought, or inclusive brands that compromise on
+            technical performance.
+          </p>
+          <p>
+            Training wear should support your body through real movement — squats, sprints,
+            deadlifts, long sessions — without riding up, digging in, rolling down, or
+            falling apart. And it should do that across a real range of sizes, not just
+            the ones that are easiest to manufacture.
+          </p>
+          <p>
+            <span class="closer">That gap is why NIA exists.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 3: WHAT WE'RE BUILDING                  -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="products" aria-labelledby="products-heading">
+      <div class="inner">
+        <h2 id="products-heading" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">What We're Building</h2>
+        <div class="products-intro text-block">
+          <p>
+            A capsule collection of 7 foundational training staples — 4 women's,
+            3 men's — designed from the ground up for comfort, coverage, and function.
+            No gimmicks. No trend pieces. Just dependable staples you reach for
+            without thinking.
+          </p>
+        </div>
+
+        <!-- Women's -->
+        <p class="product-group-label">Women's</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>Anchor Bra</h3>
+            <p>High-support training bra. Encapsulation + compression. Wide straps, stable underband. Engineered to eliminate bounce, digging, and rolling — up to G cup and beyond.</p>
+          </article>
+          <article class="product-card">
+            <h3>Steady Tee</h3>
+            <p>Full-length training tee. Structured drape with bust-aware fit. Doesn't cling when wet, doesn't ride up under load.</p>
+          </article>
+          <article class="product-card">
+            <h3>Ease Short</h3>
+            <p>Relaxed-fit training short. Secure mid-rise waist, functional pockets, multiple inseam options. A real alternative to leggings.</p>
+          </article>
+          <article class="product-card">
+            <h3>Ground Pant</h3>
+            <p>Non-legging training pant. Tapered but not tight. Full squat and lunge mobility with zero cling. The piece that signals what this brand is about.</p>
+          </article>
+        </div>
+
+        <!-- Men's -->
+        <p class="product-group-label" style="margin-top: 3rem;">Men's</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>Core Tee</h3>
+            <p>Relaxed athletic training tee. Room through the chest and shoulders without excessive drape. Structured, not sloppy.</p>
+          </article>
+          <article class="product-card">
+            <h3>Range Short</h3>
+            <p>Lift and run hybrid. Relaxed thigh, secure waist, stable pockets. 5–7" inseam.</p>
+          </article>
+          <article class="product-card">
+            <h3>Field Pant</h3>
+            <p>Training pant/jogger. Relaxed upper leg with a controlled taper. Training-first, polished enough to wear with intent.</p>
+          </article>
+        </div>
+
+        <div class="products-footer">
+          <p>
+            Every piece is offered in four core colorways — Black, Bone, Charcoal, and
+            Olive — and sized from XS to 4X for women's and S to 3X for men's.
+            Inclusive sizing is built in from day one, not added later.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 4: VALUES                               -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="values" aria-labelledby="values-heading">
+      <div class="inner">
+        <h2 id="values-heading" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">What We Stand For</h2>
+        <ul class="values-list" role="list">
+          <li>
+            <p class="value-title">Comfort is structural, not cosmetic</p>
+            <p class="value-desc">Engineered into every product through grading, fabric, construction, and fit testing.</p>
+          </li>
+          <li>
+            <p class="value-title">Inclusive sizing is non-negotiable</p>
+            <p class="value-desc">Larger sizes are core, not extended. If it doesn't fit the founder, it doesn't ship.</p>
+          </li>
+          <li>
+            <p class="value-title">Function leads, aesthetics follow</p>
+            <p class="value-desc">Pieces must look good in motion, not just standing still. Both matter — in that order.</p>
+          </li>
+          <li>
+            <p class="value-title">Honesty over hype</p>
+            <p class="value-desc">No vanity sizing. No disclaimers. Trust is built through clarity.</p>
+          </li>
+          <li>
+            <p class="value-title">Deliberate over reactive</p>
+            <p class="value-desc">We refine before we expand. Only what meets the standard ships.</p>
+          </li>
+          <li>
+            <p class="value-title">Movement is not defined by intensity</p>
+            <p class="value-desc">Whether you train five days a week or move through daily life, the clothing works the same.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 5: EMAIL SIGNUP                         -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="signup" aria-labelledby="signup-heading">
+      <div class="inner">
+        <h2 id="signup-heading">Be First to Know</h2>
+        <p class="subtext">
+          NIA is currently in development. Sign up to get updates on our progress,
+          early access to our first collection, and a look behind the build.
+        </p>
+
+        <a href="mailto:fitforniaapparel@gmail.com" class="btn-signup-link">Join the Waitlist</a>
+
+        <p class="signup-disclaimer">We respect your inbox. No spam, no fluff — just real updates.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FOOTER                                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-brand">NIA · Nothing Impedes Activity</div>
+    <div class="footer-domain">fitfornia.com</div>
+
+    <nav class="footer-socials" aria-label="Social media links">
+      <!-- Instagram -->
+      <a href="https://instagram.com/LiftwithNia" target="_blank" rel="noopener noreferrer" aria-label="NIA on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        @LiftwithNia
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@LiftwithNia" target="_blank" rel="noopener noreferrer" aria-label="NIA on TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.78a4.85 4.85 0 01-1.02-.09z"/>
+        </svg>
+        @LiftwithNia
+      </a>
+    </nav>
+
+    <p class="footer-copy">&copy; 2026 NIA Activewear</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for the hero CTA (progressively enhanced — page works without JS)
+    document.querySelector('a[href="#signup"]').addEventListener('click', function(e) {
+      const target = document.getElementById('signup');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        // Move focus to the section heading for accessibility
+        const heading = target.querySelector('h2');
+        if (heading) {
+          heading.setAttribute('tabindex', '-1');
+          heading.focus({ preventScroll: true });
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
