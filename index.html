@@ -446,7 +446,7 @@
           Athletic wear designed for lifestyle, not trends.<br />
           Built to train. Built to last. Built to feel good in.
         </p>
-        <a href="#signup" class="btn">Join the Waitlist</a>
+        <a href="javascript:void(0)" class="btn ml-onclick-form" onclick="ml('show', 'HrHKl7', true)">Join the Waitlist</a>
       </div>
     </header>
 
@@ -621,20 +621,23 @@
   </footer>
 
   <script>
-    // Smooth scroll for the hero CTA (progressively enhanced — page works without JS)
-    document.querySelector('a[href="#signup"]').addEventListener('click', function(e) {
-      const target = document.getElementById('signup');
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-        // Move focus to the section heading for accessibility
-        const heading = target.querySelector('h2');
-        if (heading) {
-          heading.setAttribute('tabindex', '-1');
-          heading.focus({ preventScroll: true });
+    // Smooth scroll helper for #signup links (kept defensive if no such link exists)
+    const signupAnchor = document.querySelector('a[href="#signup"]');
+    if (signupAnchor) {
+      signupAnchor.addEventListener('click', function(e) {
+        const target = document.getElementById('signup');
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+          // Move focus to the section heading for accessibility
+          const heading = target.querySelector('h2');
+          if (heading) {
+            heading.setAttribute('tabindex', '-1');
+            heading.focus({ preventScroll: true });
+          }
         }
-      }
-    });
+      });
+    }
   </script>
 
 </body>
