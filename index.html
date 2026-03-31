@@ -360,6 +360,54 @@
     }
 
     /* ═══════════════════════════════════════════════════ */
+    /* SECTION 6: CROWDFUNDING                             */
+    /* ═══════════════════════════════════════════════════ */
+    #crowdfund {
+      background-color: var(--charcoal);
+      text-align: center;
+    }
+
+    #crowdfund h2 {
+      color: var(--bone);
+      margin-bottom: 1rem;
+    }
+
+    #crowdfund .subtext {
+      color: rgba(245, 240, 232, 0.75);
+      max-width: 520px;
+      margin: 0 auto 2.25rem;
+      font-size: 1rem;
+    }
+
+    .btn-crowdfund {
+      display: inline-block;
+      background-color: var(--olive);
+      color: var(--bone);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.875rem 2.25rem;
+      border-radius: 4px;
+      min-height: 44px;
+      transition: background-color 0.15s ease;
+    }
+    .btn-crowdfund:hover,
+    .btn-crowdfund:focus {
+      background-color: var(--olive-dark);
+      outline: 2px solid var(--olive);
+      outline-offset: 2px;
+    }
+
+    .crowdfund-disclaimer {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      color: rgba(245, 240, 232, 0.45);
+    }
+
+    /* ═══════════════════════════════════════════════════ */
     /* FOOTER                                              */
     /* ═══════════════════════════════════════════════════ */
     footer {
@@ -591,6 +639,26 @@
     </section>
 
   </main>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- SECTION 6: CROWDFUNDING                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section id="crowdfund" aria-labelledby="crowdfund-heading">
+    <div class="inner">
+      <h2 id="crowdfund-heading">Back the Build</h2>
+      <p class="subtext">
+        NIA is crowdfunding its first collection. If you believe inclusive,
+        performance-first activewear should exist — this is how it gets made.
+      </p>
+      <a
+        href="https://www.crowdfunder.com/p/fitfornia-startup-fund"
+        class="btn-crowdfund"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Fund the Launch</a>
+      <p class="crowdfund-disclaimer">Every contribution goes directly toward production of the first collection.</p>
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════════════════ -->
   <!-- FOOTER                                          -->
